@@ -1,0 +1,30 @@
+name: remidio_fop
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  firebase_auth: ^4.6.2
+  firebase_core: ^2.13.1
+  firebase_auth_dart: ^1.0.1
+  firebase_database: ^10.2.2
+  firebase_storage: ^11.2.2
+  cloud_firestore: ^4.8.0
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/png/
