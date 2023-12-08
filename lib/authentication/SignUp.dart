@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:remidio_fop/authentication/forgotPassword.dart';
+import 'package:remidio_fop/authentication/loginPage.dart';
 import 'package:remidio_fop/constants/colors.dart';
-import 'package:remidio_fop/constants/styles.dart';
-import 'package:remidio_fop/constants/textformfields.dart';
-import 'package:remidio_fop/screens/homepage.dart';
 import 'package:remidio_fop/screens/splashscreen.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+import '../constants/styles.dart';
+import '../constants/textformfields.dart';
+import '../screens/homepage.dart';
+
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _SignUpState extends State<SignUp> {
 
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             const SizedBox(height: 120,),
 
-            Center(child: Text('Login',style: authTitleTheme,)),
+            Center(child: Text('Sign Up',style: authTitleTheme,)),
 
             const SizedBox(height: 70,),
 
@@ -40,15 +42,19 @@ class _LoginPageState extends State<LoginPage> {
 
             authTextFormField(passwordController, 'Password', 'Enter valid Password'),
 
+            const SizedBox(height: 25,),
+
+            authTextFormField(confirmPasswordController, 'Confirm Password', 'Enter valid Password.'),
+
             const SizedBox(height: 10,),
 
             GestureDetector(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotPassword()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
               },
               child: const Padding(
-                padding: EdgeInsets.only(left: 170),
-                  child: Text('Forgot Password ?',style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400, color: Colors.white),)
+                  padding: EdgeInsets.only(left: 170),
+                  child: Text('Have an Account ?',style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400, color: Colors.white),)
               ),
             ),
 
@@ -63,13 +69,13 @@ class _LoginPageState extends State<LoginPage> {
                 height: 70,
                 width: MediaQuery.of(context).size.width / 2,
                 decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20)
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20)
                 ),
                 child: Padding(
                   padding: EdgeInsets.all(15),
                   child: Center(
-                    child: Text('Login', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Colors.blueAccent.shade400),),
+                      child: Text('Sign up', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Colors.blueAccent.shade400),),
                   ),
                 ),
               ),

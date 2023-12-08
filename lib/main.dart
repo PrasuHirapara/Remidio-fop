@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:remidio_fop/authentication/SignUp.dart';
 import 'package:remidio_fop/screens/homepage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: SplashScreen(),
+      home: SignUp(),
       // home: StreamBuilder(
       //     stream: FirebaseAuth.instance.authStateChanges(),
       //     builder: (context,snapshot){

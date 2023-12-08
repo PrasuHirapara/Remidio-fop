@@ -23,7 +23,7 @@ class _AddExamState extends State<AddExam> {
             Navigator.pop(context);
           },
         ),
-        title: Text('Add Exam', style: titleTheme,),
+        title: Text('Add Exam', style: appTitleTheme,),
         centerTitle: true,
       ),
 

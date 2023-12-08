@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:remidio_fop/authentication/SignUp.dart';
 
 import 'colors.dart';
 
@@ -78,6 +79,7 @@ class _customDrawerState extends State<customDrawer> {
             title: const Text('LogOut'),
             onTap: () {
               Navigator.pop(context);
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SignUp()));
             },
           ),
         ],

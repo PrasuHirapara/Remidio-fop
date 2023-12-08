@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: appSecondaryColor,
 
       appBar: AppBar(
-        title: Text("Exams", style: titleTheme),
+        title: Text("Exams", style: appTitleTheme),
         centerTitle: true,
         actions: [
           IconButton(
