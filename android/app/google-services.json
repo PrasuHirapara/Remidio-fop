@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "798238993666",
+    "project_id": "remidio-fop-e4dd9",
+    "storage_bucket": "remidio-fop-e4dd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798238993666:android:e7053d8b3a540e5443261b",
+        "android_client_info": {
+          "package_name": "com.example.remidio_fop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe7RxoF2AswZnOY0VZSHibj1pKr80cuRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
